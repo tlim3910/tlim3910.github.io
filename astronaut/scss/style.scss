@@ -1,0 +1,23 @@
+
+html { 
+  background: url(../space.svg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.problem {
+  margin: 2.5em auto 2.5em auto;
+  width: 40%;
+  height: 80%;
+  font-size: 1.3em;
+  font-family: Courier New;
+  text-align: justify;
+}
+
+.container {
+  margin: 5em auto;
+  width: 500px;
+  height: 500px;
+}
