@@ -1,25 +1,117 @@
+$container: DarkGrey;
+$bead: transparentize(Tomato, 0.3);
+$boat: Silver;
+$water: transparentize(skyblue, 0.1);
+
 html, body {
-  background-color: #E6F6FB;
-  box-sizing: border-box;
+  position: absolute;
+  background-color: BlanchedAlmond;
+}
+
+* {
+  position: absolute;
 }
 
 *:before, *:after {
-  // position: absolute;
-  box-sizing: inherit;
-  content: '';
-}
-
-.problem {
-  margin: 2.5em auto 2.5em auto;
-  width: 40%;
-  height: 80%;
-  font-size: 1.3em;
-  font-family: Courier New;
-  text-align: justify;
+  position: absolute;
+  content: "";
 }
 
 .container {
-  margin: 5em auto;
-  width: 800px;
-  height: 400px;
+  width: 301px;
+  height: 380px;
+  transform: translate(220%, 20%);
+  overflow: hidden;
+}
+
+.cylinder {
+  width: 95%;
+  height: 100%;
+  border: 4px solid $container;
+  border-radius: 10px;
+  left: 0%;
+  top: -5%;
+  overflow: hidden;
+}
+
+.beads {
+  width: 100%;
+  height: 70%;
+  bottom: 0%;
+  left: 0%;
+  $size: 13px;
+  .bead {
+    width: $size;
+    height: $size;
+    background-color: $bead;
+    border-radius: 50%;
+  }
+  $bottom: 0px;
+  $left: 0px;
+  $Width: 280px;
+  @for $i from 1 through (352) {
+    .bead:nth-of-type(#{$i}) {
+      bottom: $bottom;
+      left: $left;
+    }
+    $left: $left + $size;
+    @if $left > $Width {
+      $left: 0px;
+      $bottom: $bottom + $size;
+    }
+  }
+}
+
+.vessel {
+  top: 38.3%;
+  left: 44.5%;
+  width: 29px;
+  height: 180px;
+  animation: rise2 15s linear infinite;
+}
+
+.hull {
+  top: 0%;
+  left: 5%;
+  width: 29px;
+  height: 0px;
+  border-top: 11px solid $boat;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  &:after {
+    background-color: $boat;
+    width: 13px;
+    height: 13px;
+    transform: rotate(45deg);
+    bottom: 2px;
+    left: 25%;
+  }
+}
+
+.water {
+  width: 95.2%;
+  height: 80%;
+  bottom: 4%;
+  left: 1%;
+  background-color: $water;
+  border-radius: 1px 1px 9px 9px;
+  animation: rise1 15s linear infinite;
+}
+
+@keyframes rise1 {
+  0%, 100% {
+    height: 0%;
+  }
+  100% {
+    height: 74%;
+  }
+}
+
+@keyframes rise2 {
+  0%, 74.2%, 100% {
+    top: 38.3%;
+  }
+  100% {
+    top: 19.1%;
+  }
 }

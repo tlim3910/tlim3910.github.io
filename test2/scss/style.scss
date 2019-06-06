@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Questrial');
+
+$background-color: #FEFCD9;
+$black: black;
+$main-font: 'Questrial';
+$PA: #4692F4;
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 2000px;
+}
+
+.row::before,
+.row::after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+
+.one,
+.one-third,
+.two-thirds,
+.one-fourth,
+.one-fifth,
+.half {
+  width: 100%;
+}
+
+@media only screen and (min-width: 800px) {
+  .one {
+    width: 100%;
+  }
+  .half {
+    width: calc(100% / 2);
+  }
+  .one-third {
+    width: calc(100% / 3);
+  }
+  .one-fourth {
+    width: calc(100% / 4);
+  }
+  .one-fifth {
+    width: calc(100% / 5);
+  }
+  .two-thirds {
+    width: calc(100% / 3 * 2);
+  }
+  .column {
+    float: left;
+  }
+}
+
+/* Styling */
+
+body {
+  background: $background-color;
+  color: $black;
+  font-size: 1.3em;
+  font-family: $main-font;
+  padding: 0 10px;
+}
+
+.column {
+  border: 1px solid #666;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+#title {
+  font-size: 3.0em;
+  text-align: center;
+  font-family: $main-font; 
+  color: $PA;
+  font-weight: bold;
+}
+
+#prob1 {
+  display: block;
+  margin: auto;
+}
+
+#prob5 {
+  display: block;
+  margin: auto;
+}

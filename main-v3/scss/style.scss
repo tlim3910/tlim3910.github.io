@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Questrial');
+
+$background-color: #FEFCD9;
+$black: black;
+$main-font: 'Questrial'; // raleway
+$text: Courier New;
+$PA: rgb(93, 161, 79);
+
+body {
+  background: $background-color;
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.header {
+  background: $PA;
+  font-size: 4.5em;
+  padding: 1em 1em 1em 2em;
+  font-family: $main-font, sans-serif;
+  color: white;
+  text-align: left;
+}
+
+.footer {
+  background: $PA;
+  font-size: 2em;
+  padding: 1em;
+  font-family: $main-font;
+  color: white;
+}
+
+.main {
+  text-align: left;
+  padding: 5em 10em 5em 10em;
+}
+
+@media all and (min-width: 600px) {
+  .aside { flex: 1 0 0; }
+}
+@media all and (min-width: 800px) {
+  .main   { flex: 8 0px; }
+  .main   { order: 1; }
+  .footer { order: 2; }
+}
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.flex-item {
+  padding: 30px;
+  width: 250px;
+  height: 350px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  line-height: 40px;
+  color: $black;
+  font-weight: normal;
+  font-size: 1.3em;
+  text-align: center;
+  font-family: $text, 'Questrial', cursive, Tahoma;  
+}
+
+#cointoss {
+  transform: translateY(54%);
+}
+
+#loopdeloop {
+  transform: translateY(20%);
+}
+
+#cylindricalroom {
+  transform: translateY(20%);
+}
+
+#sodacan {
+  transform: translateY(17%);
+}
+
+#multiplecollisions {
+  transform: translateY(20%);
+}
+
+#astronaut {
+  transform: translateY(14%);
+}
+
+#automaticdoor {
+  transform: translateY(56%);
+}
+
+#beads {
+  transform: translateY(2%);
+}
+
+#sphericalbowl {
+  transform: translateY(1%);
+}
+
+#takeoff {
+  transform: translateY(4%);
+}

@@ -1,25 +1,188 @@
+$ramp: BurlyWood;
+$scratch: Sienna;
+
 html, body {
-  background-color: OldLace;
-  box-sizing: border-box;
+  background-color: AntiqueWhite;
+}
+
+* {
+  position: absolute;
 }
 
 *:before, *:after {
-  // position: absolute;
-  box-sizing: inherit;
+  position: absolute;
   content: '';
 }
 
-.problem {
-  margin: 2.5em auto 2.5em auto;
-  width: 40%;
-  height: 80%;
-  font-size: 1.3em;
-  font-family: Courier New;
-  text-align: justify;
+.container {
+  margin: auto;
+  width: 730px;
+  height: 350px;
+  transform: translate(85%, 60%);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;  
+  overflow: hidden;
 }
 
-.container {
-  margin: 5em auto;
-  width: 600px;
-  height: 400px;
+.track1 {
+  width: 9%;
+  height: 30%;
+  background-color: $ramp;
+  bottom: 0%;
+  left: -0%;
+  border-radius: 8%;
+}
+
+.track2 {
+  width: 200px;
+  height: 200px;
+  background-color: $ramp;
+  bottom: -36.5%;
+  left: -2.6%;
+  transform: rotate(-55deg);
+  border-radius: 9%;
+}
+
+.track3 {
+  width: 80%;
+  height: 5px;
+  background-color: $ramp;
+  bottom: 0%;
+  left: 0%;
+  border-radius: 4px;
+}
+
+.track4 {
+  width: 20%;
+  height: 5px;
+  bottom: 0%;
+  left: 120%;
+  border-radius: 5%; 
+  background-color: yellow;
+  .track {
+    background-color: $ramp;
+    height: 100%;
+    width: 15px;
+    bottom: 0;
+    border-radius: 4px;
+  }
+  $right: 336px;
+  @for $i from 0 through (3) {
+    .track:nth-of-type(#{$i}) {
+      right: $right;
+    }
+    $right: $right + 25px;
+  }
+}
+
+.container2 {
+  margin: auto;
+  width: 650px;
+  height: 350px;
+  transform: translate(85%, 60%);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;  
+  overflow: hidden;
+}
+
+.cylinder1 {
+  width: 20px;
+  height: 20px;
+  background-color: LightSeaGreen;
+  border-radius: 50%;
+  bottom: 29.6%;
+  left: 19.2%;
+  animation: cylinder1 20s linear infinite;
+}
+
+.cylinder2 {
+  width: 50px;
+  height: 50px;
+  background-color: MediumSlateBlue;
+  border-radius: 50%;
+  bottom: 1.2%;
+  right: 22%;
+  animation: cylinder2 20s linear infinite;
+}
+
+.texture1 {
+  width: 23px;
+  height: 1px;
+  border-radius: 3px;
+  background-color: $scratch;
+  left: 1%;
+  bottom: 22%;
+}
+
+.texture2 {
+  width: 18px;
+  height: 1px;
+  border-radius: 3px;
+  background-color: $scratch;
+  left: 12%;
+  bottom: 16%;
+}
+
+.texture3 {
+  width: 25px;
+  height: 1px;
+  border-radius: 3px;
+  background-color: $scratch;
+  left: 5%;
+  bottom: 6%;
+}
+
+.texture4 {
+  width: 24px;
+  height: 1px;
+  border-radius: 3px;
+  background-color: $scratch;
+  left: 19%;
+  bottom: 3%;
+}
+
+.texture5 {
+  width: 15px;
+  height: 1px;
+  border-radius: 3px;
+  background-color: $scratch;
+  right: 55%;
+  bottom: 0.5%;
+}
+
+@keyframes cylinder1 {
+  0% {
+    transform: translateX(0);
+  }
+  10%, 35.5%, 49% {
+    transform: translate(146px, 100px);
+  }
+  20% {
+    transform: translate(317px, 100px);
+  }
+  42.5% {
+    transform: translate(90px, 62px);
+  }
+  71.5% {
+    transform: translate(406px, 100px);
+  }
+  100% {
+    transform: translate(195px, 100px);
+  }
+}
+
+@keyframes cylinder2 {
+  0%, 20% {
+    transform: translate(0);
+  }
+  71.5% {
+    transform: translate(90px);
+  }
+  100% {
+    transform: translate(178px);
+  }
 }

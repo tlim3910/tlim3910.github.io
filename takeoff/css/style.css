@@ -1,19 +1,227 @@
-html, body {
+body {
   background-color: LightSteelBlue;
-  box-sizing: border-box;
 }
 
-.problem {
-  margin: 2.5em auto 2.5em auto;
-  width: 40%;
-  height: 80%;
-  font-size: 1.3em;
-  font-family: Courier New;
-  text-align: justify;
+* {
+  position: absolute;
 }
 
 .container {
-  margin: 5em auto;
-  width: 400px;
-  height: 400px;
+  margin: auto;
+  transform: translate(300%, 100%);
+  /*background-color: LightSteelBlue;*/
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  /*overflow: hidden;*/
+}
+
+.window-out {
+  width: 75%;
+  height: 90%;
+  background-color: Silver;
+  border-radius: 40%;
+  overflow: hidden;
+  left: -5.7%;
+  top: -4.9%;
+  z-index: -1;
+  border: 3px solid LightGrey;
+}
+
+.window {
+  width: 65%;
+  height: 80%;
+  background-color: #72DDFE;
+  border-radius: 40%;
+  border-top: 3.5px solid DarkGrey;
+  border-right: 0.4px solid DarkGrey;
+  border-left: 0.4px solid DarkGrey;
+  border-bottom: 0.4px solid DarkGrey;
+  overflow: hidden;
+}
+
+.window-cover {
+  width: 100%;
+  height: 8%;
+  background-color: silver;
+  left: 5%;
+  border-bottom: 0.4px solid DarkGrey;
+}
+
+.handle {
+  width: 30%;
+  height: 30%;
+  background-color: LightGrey;
+  left: 30%;
+  top: 40%;
+  border-radius: 30%;
+  border-bottom: 3px solid DarkGrey;
+}
+
+.cloud1-group {
+  width: 14%;
+  height: 3%;
+  top: 20%;
+  left: 23%;
+}
+
+.cloud-side {
+  width: 100%;
+  height: 100%;
+  background-color: WhiteSmoke;
+  top: 20%;
+  left: 23%;
+  border-radius: 40%;
+  opacity: 0.8;
+}
+
+.cloud-up1 {
+  width: 40%;
+  height: 100%;
+  background-color: WhiteSmoke;
+  top: -15%;
+  left: 41%;
+  border-radius: 60%;  
+  opacity: 0.8;
+}
+
+.cloud-up2 {
+  width: 45%;
+  height: 120%;
+  background-color: WhiteSmoke;
+  top: -30%;
+  left: 65%;
+  border-radius: 50%;  
+  opacity: 0.8;
+}
+
+.cloud2-group {
+  width: 15.5%;
+  height: 3.5%;
+  top: 35%;
+  left: 75%;
+}
+
+.cloud3-group {
+  width: 15%;
+  height: 2%;
+  top: 45%;
+  left: -10%;
+}
+
+.platform {
+  width: 100%;
+  height: 45%;
+  background-color: LightSlateGray;
+  bottom: 0%;
+}
+
+.grass-left {
+  width: 80%;
+  height: 30%;
+  background-color: #319A54;
+  transform: skew(-51deg);
+  bottom: 15%;
+  left: -75%;
+  border-right: 3px solid #36724A;
+}
+
+.grass-right {
+  width: 80%;
+  height: 30%;
+  background-color: #319A54;
+  transform: skew(69deg);
+  bottom: 15%;
+  right: -75%;
+  border-left: 3px solid #36724A;
+}
+
+.line1 {
+  width: 4px;
+  height: 40px;
+  background-color: yellow;
+  bottom: -15%;
+  left: 15%;
+  transform: skew(-50deg)
+}
+
+.line2 {
+  width: 4px;
+  height: 40px;
+  background-color: yellow;
+  bottom: -25%;
+  right: 33%;
+  transform: skew(-50deg)
+}
+
+.line3 {
+  width: 5.8px;
+  height: 40px;
+  background-color: Snow;
+  bottom: -25%;
+  left: 52.2%;
+  transform: skew(15deg)
+}
+
+.line4 {
+  width: 3.8px;
+  height: 15px;
+  background-color: Snow;
+  bottom: 33%;
+  left: 45.8%;
+  transform: skew(15deg)
+}
+
+.line5 {
+  width: 2.5px;
+  height: 11px;
+  background-color: Snow;
+  bottom: 65%;
+  left: 41.7%;
+  transform: skew(15deg)
+}
+
+.line6 {
+  width: 1.7px;
+  height: 6.4px;
+  background-color: Snow;
+  bottom: 88%;
+  left: 38.6%;
+  transform: skew(15deg)
+}
+
+.cord {
+  width: 1.1px;
+  height: 65%;
+  background-color: #F1F2F1;
+  border-radius: 5%;
+  top: -10%;
+  left: 70%;
+  transform: rotate(18deg);
+}
+
+.iphone {
+  width: 13px;
+  height: 53px;
+  background-color: black;
+  transform: rotate(-20deg);
+  transform: skew(11deg);
+  border-radius: 8%;
+  left: -0.5px;
+  bottom: -17%;  
+}
+
+.iphone-screen {
+  width: 11px;
+  height: 42px;
+  background-color: #8AFEDF;
+  transform: rotate(-20deg);
+  transform: skew(11deg);
+  border-radius: 8%;
+  left: 0px;
+  bottom: -14.4%;  
+  opacity: 0.8;
 }

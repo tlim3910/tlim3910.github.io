@@ -1,0 +1,192 @@
+html, body {
+  background-color: AliceBlue;
+}
+
+* {
+  position: absolute;
+}
+
+*:before, *:after {
+  position: absolute;
+  content: '';
+}
+
+.container {
+  margin: auto;
+  transform: translate(270%, 100%);
+  /* background-color: Red; */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  /*overflow: hidden;*/
+}
+
+.table {
+  width: 180%;
+  height: 90%;
+  background-color: PapayaWhip;
+  transform: perspective(600px) rotateX(40deg) skew(-30deg);
+  bottom: -15%;
+  left: -63%;
+  border: 5px solid rgba(160, 82, 45, 0.2);
+  border-radius: 4%;
+  background-image: linear-gradient(45deg, rgba(160, 82, 45, 0.7) 30%, rgba(139, 69, 19, 0.6) 65%, rgba(160, 82, 45, 0.9) 100%);
+  overflow: hidden;
+}
+
+.can {
+  width: 150px;
+  height: 250px;
+  transform-style: preserve-3d;
+  background-color: Blue;
+  border-radius: 11%;
+  transform: rotate(39deg);
+  background-image: linear-gradient(90deg, rgba(25, 25, 112, 0.8) 0%, blue 38%, transparent 70%, rgba(25, 25, 112, 0.7) 100%);
+}
+
+.pepsi {
+  font-size: 35px;
+  color: white;
+  font-family: Tahoma;
+  left: 30px;
+  bottom: 60px;
+}
+
+.logo {
+  width: 100px;
+  height: 95px;
+  background-color: Blue;
+  border-radius: 50% 50% 50% 50%;
+  border: 3px solid snow;
+  top: 45px;
+  left: 25px;
+  overflow: hidden;
+  transform: perspective(300px) rotateZ(4deg);
+}
+
+.logoRed {
+  width: 230px;
+  height: 180px;
+  background-color: white;
+  border-radius: 30% 74% 30% 30%;
+  transform: rotate(-20deg) skew(-10deg);
+  bottom: -10%;
+  right: 23%;
+}
+.logoRed:after {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  border-radius: 50%;
+  bottom: 0.5%;
+  right: 9.2%;
+  transform: skew(15deg);
+}
+
+.top {
+  width: 91%;
+  height: 12.5%;
+  background-color: LightGrey;
+  left: 4.3%;
+  top: -3.5%;
+  border-radius: 50%;
+  z-index: 3;
+  background-image: linear-gradient(45deg, rgba(192, 192, 192, 0.9) 30%, White 50%, rgba(192, 192, 192, 0.9) 100%);
+  overflow: hidden;
+}
+
+.hole {
+  width: 33%;
+  height: 19px;
+  background-color: rgba(0, 0, 0, 0.95);
+  border-radius: 55%;
+  bottom: -8%;
+  left: 19%;
+  opacity: 0.8;
+  transform: skew(-3deg);
+}
+
+.opener {
+  width: 26%;
+  height: 17px;
+  border-radius: 40%;
+  bottom: 7%;
+  left: 36%;
+  transform: rotate(-30deg);
+  border: 4px solid rgba(128, 128, 128, 0.4);
+}
+.opener:after {
+  width: 13px;
+  height: 16.5px;
+  border-radius: 20% 100% 100% 20%;
+  border: 4px solid rgba(211, 211, 211, 0.9);
+  right: -4px;
+  bottom: -3.5px;
+}
+
+.top2 {
+  width: 91%;
+  height: 14%;
+  background-color: rgba(169, 169, 169, 0.7);
+  left: 4.5%;
+  top: -5.4%;
+  border-radius: 52%;
+  z-index: 2;
+}
+
+.top3 {
+  width: 92%;
+  height: 13%;
+  background-color: rgba(169, 169, 169, 0.7);
+  left: 4.5%;
+  top: -6.7%;
+  border-radius: 48%;
+  z-index: 2;
+}
+
+.top3 {
+  width: 94%;
+  height: 15%;
+  background-color: rgba(169, 169, 169, 0.9);
+  left: 3.1%;
+  top: -4.0%;
+  border-radius: 48%;
+  z-index: 2;
+}
+
+.bottom {
+  width: 91%;
+  height: 15.5%;
+  background-color: Blue;
+  left: 4.3%;
+  bottom: -4.1%;
+  border-radius: 75%;
+  z-index: 3;
+  transform: perspective(300px) rotateX(0deg);
+  background-image: linear-gradient(90deg, rgba(25, 25, 112, 0.8) 0%, blue 36%, transparent 68%, rgba(25, 25, 112, 0.6) 100%);
+}
+
+.bottom2 {
+  width: 86%;
+  height: 17.5%;
+  background-color: Blue;
+  left: 6.5%;
+  bottom: -6.8%;
+  border-radius: 50%;
+  z-index: 3;
+  transform: rotate(-0.5deg);
+  background-image: linear-gradient(45deg, rgba(192, 192, 192, 0.9) 15%, rgba(255, 255, 255, 0.8) 25%, rgba(192, 192, 192, 0.6) 100%);
+}
+
+.shadow {
+  width: 320px;
+  height: 63px;
+  background: black;
+  border-radius: 5% 100% 100% 5%;
+  bottom: 21.6%;
+  right: -3%;
+  transform: skew(45deg) rotate(-9.2deg);
+}

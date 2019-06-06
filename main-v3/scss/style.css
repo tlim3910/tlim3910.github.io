@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css?family=Questrial");
+body {
+  background: #FEFCD9;
+  margin: 0;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+}
+
+.wrapper > * {
+  padding: 10px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 100%;
+          flex: 1 100%;
+}
+
+.header {
+  background: #5da14f;
+  font-size: 4.5em;
+  padding: 1em 1em 1em 2em;
+  font-family: "Questrial", sans-serif;
+  color: white;
+  text-align: left;
+}
+
+.footer {
+  background: #5da14f;
+  font-size: 2em;
+  padding: 1em;
+  font-family: "Questrial";
+  color: white;
+}
+
+.main {
+  text-align: left;
+  padding: 5em 10em 5em 10em;
+}
+
+@media all and (min-width: 600px) {
+  .aside {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 0px;
+            flex: 1 0 0;
+  }
+}
+
+@media all and (min-width: 800px) {
+  .main {
+    -webkit-box-flex: 8;
+        -ms-flex: 8 0px;
+            flex: 8 0px;
+  }
+  .main {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .footer {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.flex-item {
+  padding: 30px;
+  width: 250px;
+  height: 350px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  line-height: 40px;
+  color: black;
+  font-weight: normal;
+  font-size: 1.3em;
+  text-align: center;
+  font-family: Courier New, "Questrial", cursive, Tahoma;
+}
+
+#cointoss {
+  -webkit-transform: translateY(54%);
+          transform: translateY(54%);
+}
+
+#loopdeloop {
+  -webkit-transform: translateY(20%);
+          transform: translateY(20%);
+}
+
+#cylindricalroom {
+  -webkit-transform: translateY(20%);
+          transform: translateY(20%);
+}
+
+#sodacan {
+  -webkit-transform: translateY(17%);
+          transform: translateY(17%);
+}
+
+#multiplecollisions {
+  -webkit-transform: translateY(20%);
+          transform: translateY(20%);
+}
+
+#astronaut {
+  -webkit-transform: translateY(14%);
+          transform: translateY(14%);
+}
+
+#automaticdoor {
+  -webkit-transform: translateY(56%);
+          transform: translateY(56%);
+}
+
+#beads {
+  -webkit-transform: translateY(2%);
+          transform: translateY(2%);
+}
+
+#sphericalbowl {
+  -webkit-transform: translateY(1%);
+          transform: translateY(1%);
+}
+
+#takeoff {
+  -webkit-transform: translateY(4%);
+          transform: translateY(4%);
+}
+/*# sourceMappingURL=style.css.map */
