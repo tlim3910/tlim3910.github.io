@@ -1,0 +1,19 @@
+html, body {
+  background-color: #F2DADA;
+  box-sizing: border-box;
+}
+
+.problem {
+  margin: 2.5em auto 2.5em auto;
+  width: 40%;
+  height: 80%;
+  font-size: 1.3em;
+  font-family: Courier New;
+  text-align: justify;
+}
+
+.container {
+  margin: 5em auto;
+  width: 400px;
+  height: 400px;
+}

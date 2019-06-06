@@ -1,201 +1,23 @@
-$star: #b9befa;
-$body1: LightGrey;
-$body2: LightSlateGrey;
-$wing: #FEE069;
-$dash: Gray;
 
-html, body {
-  background-color: Black;
+html { 
+  background: url(../space.svg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-html {
-  box-sizing: border-box;
-}
-
-* {
-  position: absolute;
-}
-
-*:before, *:after {
-  position: absolute;
-  content: "";
-}
-
-.background {
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.stars {
-  /*
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  */
-  .star {
-    border-radius: 50%;
-    background-color: $star;
-  }
-  @for $i from 1 through (60) {
-    $size: random(4) + px;
-    .star:nth-of-type(#{$i}) {
-      top: random(100) + vh;
-      left: random(100) + vw;
-      width: $size;
-      height: $size;
-    }
-  }
+.problem {
+  margin: 2.5em auto 2.5em auto;
+  width: 40%;
+  height: 80%;
+  font-size: 1.3em;
+  font-family: Courier New;
+  text-align: justify;
 }
 
 .container {
-  width: 700px;
-  height: 700px;
-  transform: translate(80%, 10%);
-}
-
-.hermes {
-  width: 180px;
-  height: 130px;
-  top: 0%;
-  left: 2%;
-  animation: moveRight 5s linear infinite;
-}
-
-.cylinder1 {
-  width: 80%;
-  height: 6px;
-  background-color: $body1;
-  left: 0%;
-  top: 40%;
-  border-radius: 6px;
-  &:before {
-    width: 20%;
-    height: 17px;
-    right: 20px;
-    bottom: -4px;
-    border-radius: 30%;
-    background-color: $body2;    
-  }
-  &:after {
-    width: 20%;
-    height: 16px;
-    left: 33px;
-    bottom: -4px;
-    border-radius: 10%;
-    background-color: $body2;
-  }
-}
-
-.wing1 {
-  width: 6px;
-  height: 50%;
-  background-color: $wing;
-  left: 24px;
-  top: 20px;
-  transform: rotate(10deg);
-}
-
-.wing1:nth-child(2) {
-  left: 73px;
-  transform: rotate(0deg);
-}
-
-.wing1:nth-child(3) {
-  left: 83px;
-  transform: rotate(0deg);
-}
-
-.lines {
-  width: 100%;
-  height: 1px;
-  background-color: DarkSlateGray;
-}
-$top: 5px;
-@for $k from 1 through (8) {
-  .lines:nth-of-type(#{$k}) {
-    top: $top;
-  }
-  $top: $top + 7.5px;
-}
-
-.spacecraft {
-  width: 15px;
-  height: 33px;
-  bottom: 44%;
-  left: 47%;
-  border-radius: 50% 50% 25% 25%;
-  background-image: linear-gradient(PaleTurquoise, PaleTurquoise 19.5%, MediumPurple 21.5%);
-  &:after {
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background-color: PaleTurquoise;
-    top: 40%;
-    left: 24%;
-  }
-  animation: moveUp 5s linear infinite;
-}
-
-.wingLeft {
-  width: 5px;
-  height: 9px;
-  border-radius: 20%;
-  background-color: PaleTurquoise;
-  left: -18%;
-  bottom: -10%;
-  transform: skew(0deg, -40deg);
-}
-
-.wingRight {
-  width: 5px;
-  height: 9px;
-  border-radius: 20%;
-  background-color: PaleTurquoise;
-  right: -18%;
-  bottom: -10%;
-  transform: skew(0deg, 40deg);
-}
-
-.horizontal {
-  width: 28%;
-  height: 10%;
-  border-top: 2px dashed $dash;
-  left: 20%;
-  top: 7.7%;
-}
-
-.vertical {
-  width: 28%;
-  height: 43%;
-  border-right: 2px dashed $dash;
-  left: 20%;
-  top: 7.7%;
-  &:after {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: $dash;
-    top: -1%;
-    right: -3%;
-  }
-}
-
-@keyframes moveRight {
-    5%, 50.1% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(13%);
-  }
-}
-
-@keyframes moveUp {
-    5%, 50.1% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-75%);
-  }
+  margin: 5em auto;
+  width: 500px;
+  height: 500px;
 }

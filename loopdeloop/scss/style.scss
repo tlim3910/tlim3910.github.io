@@ -1,204 +1,25 @@
-$loop: LightYellow;
-$post: DarkGrey;
-$ride: Aquamarine;
-
-html, background {
-  background-color: Linen;
-}
-
-* {
-  position: absolute;
+html, body {
+  background-color: OldLace;
+  box-sizing: border-box;
 }
 
 *:before, *:after {
-  position: absolute;
+  // position: absolute;
+  box-sizing: inherit;
   content: '';
 }
 
-.container {
-  margin: auto;
-  width: 650px;
-  height: 350px;
-  transform: translate(100%, 60%);
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;  
-  background-image: linear-gradient(Pink 0%, #FEBD5B 50%, OrangeRed 100%);
-  overflow: hidden;
-}
-
-.track {
-  width: 200%;
-  height: 50%;
-  bottom: 0%;
-  left: -50%;
-  border-top: 2.5px solid $loop;
-  border-radius: 50%;
-}
-
-.posts {
-  width: 100%;
-  height: 50%;
-  bottom: 0%;
-  .post {
-    width: 1px;
-    background-color: $post;
-    bottom: 0%;
-  }
-  $height: 163px;
-  $left: 10px;
-  @for $i from 1 through (7) {
-    .post:nth-of-type(#{$i}) {
-      left: $left;
-      height: $height;
-    }
-    $height: $height + 1.4px;
-    $left: $left + 25px;
-  }
-  @for $i from 8 through (13) {
-    .post:nth-of-type(#{$i}) {
-      left: $left;
-      height: $height;
-    }
-    $height: $height + 0.03px;
-    $left: $left + 25px;
-  }
-  @for $i from 14 through (19) {
-    .post:nth-of-type(#{$i}) {
-      left: $left;
-      height: $height;
-    }
-    $height: $height - 0.2px;
-    $left: $left + 25px;
-  }
-  @for $i from 20 through (26) {
-    .post:nth-of-type(#{$i}) {
-      left: $left;
-      height: $height;
-    }
-    $height: $height - 1.4px;
-    $left: $left + 25px;
-  }  
-  .post:nth-of-type(6) {
-    height: 205px;
-  }
-  .post:nth-of-type(7) {
-    height: 180px;
-  }
-  .post:nth-of-type(9) {
-    height: 180px;
-  }
-  .post:nth-of-type(10) {
-    height: 215px;
-  }
-  .post:nth-of-type(16) {
-    height: 115px;
-  }  
-  .post:nth-of-type(17) {
-    height: 76px;
-  }  
-  .post:nth-of-type(18) {
-    height: 70px;
-  }  
-  .post:nth-of-type(19) {
-    height: 77px;
-  } 
-  .post:nth-of-type(20) {
-    height: 107px;
-  }  
-}
-
-.loop1 {
-  width: 100px;
-  height: 100px;
-  border: 3px solid $loop;
-  border-radius: 50%;
-  bottom: 49.2%;
-  left: 20%;
-}
-
-.loop2 {
-  width: 100px;
-  height: 100px;
-  border: 3px solid $loop;
-  border-radius: 50%;
-  top: 49.8%;
-  right: 25%;
-}
-
-.cloud1-group {
-  width: 6%;
-  height: 2.5%;
-  top: 10%;
-  left: 6%;
-}
-
-.cloud-side {
-  width: 100%;
-  height: 100%;
-  background-color: WhiteSmoke;
-  top: 20%;
-  left: 23%;
-  border-radius: 40%;
-  opacity: 0.8;
-}
-
-.cloud-up1 {
+.problem {
+  margin: 2.5em auto 2.5em auto;
   width: 40%;
-  height: 100%;
-  background-color: WhiteSmoke;
-  top: -15%;
-  left: 41%;
-  border-radius: 60%;  
-  opacity: 0.8;
+  height: 80%;
+  font-size: 1.3em;
+  font-family: Courier New;
+  text-align: justify;
 }
 
-.cloud-up2 {
-  width: 45%;
-  height: 120%;
-  background-color: WhiteSmoke;
-  top: -30%;
-  left: 65%;
-  border-radius: 50%;  
-  opacity: 0.8;
-}
-
-.cloud2-group {
-  width: 8%;
-  height: 3.5%;
-  top: 39%;
-  right: 7%;
-}
-
-.cloud3-group {
-  width: 7%;
-  height: 2%;
-  bottom: 35%;
-  left: 20%;
-}
-
-.cloud4-group {
-  width: 7%;
-  height: 2%;
-  top: 15%;
-  right: 28%;
-}
-
-.ride1 {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  right: 6.5%;
-  bottom: 63%;
-  background-image: linear-gradient(-45deg, MediumSlateBlue, MediumSlateBlue 49.5%, white 49.5%, white 50.5%, $ride 50.5%);  
-}
-
-.ride2 {
-  width: 20px;
-  height: 20px;
-  background-image: linear-gradient(45deg, MediumSlateBlue, MediumSlateBlue 49.5%, white 49.5%, white 50.5%, $ride 50.5%);
-  border-radius: 50%;
-  right: -22%;
-  bottom: 35%;  
+.container {
+  margin: 5em auto;
+  width: 600px;
+  height: 400px;
 }
