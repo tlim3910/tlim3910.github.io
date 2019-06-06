@@ -9,6 +9,7 @@ $PA: rgb(120, 136, 223);
 body {
   background: $background-color;
   margin: 0;
+  line-height: 22px;
 }
 
 .topnav {
@@ -135,9 +136,9 @@ body {
   font-family: Courier New;
 }
 
-br {
-  display: block;
-  margin: 138px 0;
+p {
+  margin-top: 30px;
+  margin-bottom: 17px;
 }
 
 .about {
