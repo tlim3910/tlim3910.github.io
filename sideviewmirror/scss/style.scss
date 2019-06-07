@@ -1,6 +1,12 @@
 html, body {
-  background-color: rgb(253, 239, 213);
+  background-color: OldLace;
   box-sizing: border-box;
+}
+
+*:before, *:after {
+  // position: absolute;
+  box-sizing: inherit;
+  content: '';
 }
 
 .problem {
@@ -14,6 +20,6 @@ html, body {
 
 .container {
   margin: 5em auto;
-  width: 400px;
+  width: 600px;
   height: 400px;
 }

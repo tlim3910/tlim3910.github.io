@@ -213,4 +213,9 @@ body {
   -webkit-transform: translateY(-34px);
           transform: translateY(-34px);
 }
+
+#sideviewmirror {
+  -webkit-transform: translateY(36px);
+          transform: translateY(36px);
+}
 /*# sourceMappingURL=style.css.map */
