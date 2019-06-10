@@ -99,9 +99,14 @@ body {
   background: url(../header.svg) no-repeat center center fixed;
   background-size: cover;
   font-size: 2em;
-  padding: 1em;
+  padding: 0em 1em 0em 1em;
   font-family: "Questrial";
   color: #f7f7f0;
+}
+
+#feynman {
+  float: right;
+  padding-right: 1em;
 }
 
 .main {
@@ -217,5 +222,15 @@ body {
 #sideviewmirror {
   -webkit-transform: translateY(36px);
           transform: translateY(36px);
+}
+
+#rollingball {
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+}
+
+#magnifyingglass {
+  -webkit-transform: translateY(8px);
+          transform: translateY(8px);
 }
 /*# sourceMappingURL=style.css.map */

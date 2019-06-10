@@ -105,9 +105,14 @@ body {
   -o-background-size: cover;
   background-size: cover;
   font-size: 2em;
-  padding: 1em;
+  padding: 0em 1em 0em 1em;
   font-family: $main-font;
   color: rgb(247, 247, 240);    
+}
+
+#feynman {
+  float: right;
+  padding-right: 1em;
 }
 
 .main {
@@ -189,4 +194,12 @@ body {
 
 #sideviewmirror {
   transform: translateY(36px);
+}
+
+#rollingball {
+  transform: translateY(40px);
+}
+
+#magnifyingglass {
+  transform: translateY(8px);
 }

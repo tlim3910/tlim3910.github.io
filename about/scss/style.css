@@ -104,9 +104,14 @@ body {
   background: url(../header.svg) no-repeat center center fixed;
   background-size: cover;
   font-size: 2em;
-  padding: 1em;
+  padding: 0em 1em 0em 1em;
   font-family: "Questrial";
   color: #f7f7f0;
+}
+
+#feynman {
+  float: right;
+  padding-right: 1em;
 }
 
 .main {
@@ -153,7 +158,7 @@ p {
 }
 
 .about {
-  margin: 2.5em auto 0em auto;
+  margin: 2.5em auto 2.5em auto;
   width: 57%;
   height: 66%;
   font-size: 1.1em;
