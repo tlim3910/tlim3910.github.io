@@ -46,6 +46,9 @@ body {
   border-bottom: 4px solid rgb(72, 211, 67);
 }
 
+.underline {
+  border-bottom: 4px solid rgb(72, 211, 67);
+}
 
 .topnav .icon {
   display: none;
@@ -152,6 +155,29 @@ body {
   font-family: $text, 'Questrial', cursive, Tahoma;  
 }
 
+.about2 {
+  font-size: 1.3em;
+  color: black;
+  font-weight: bolder;
+  font-family: Courier New;
+}
+
+p {
+  margin-top: 30px;
+  margin-bottom: 17px;
+}
+
+.about {
+  margin: 2.5em auto 2.5em auto;
+  width: 57%;
+  height: 66%;
+  font-size: 1.1em;
+  font-family: Courier New;
+  text-align: left;
+  color: black;
+  font-weight: lighter;
+}
+
 #cointoss {
   transform: translateY(29px);
 }
@@ -202,4 +228,12 @@ body {
 
 #magnifyingglass {
   transform: translateY(8px);
+}
+
+#satellites {
+  transform: translateY(11px);
+}
+
+#elevatorpulley {
+  transform: translateY(11px)
 }
