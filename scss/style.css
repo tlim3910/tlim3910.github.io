@@ -181,18 +181,25 @@ body {
 }
 
 p {
-  margin-top: 30px;
-  margin-bottom: 17px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .about {
   margin: 2.5em auto 2.5em auto;
-  width: 57%;
+  width: 59%;
   height: 66%;
   font-size: 1.1em;
   font-family: Courier New;
   text-align: left;
   color: black;
+  font-weight: lighter;
+}
+
+.copyright {
+  margin: 12.5em auto 2.5em auto;
+  font-size: 0.5em;
+  font-family: Courier New;
   font-weight: lighter;
 }
 
